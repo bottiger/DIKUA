@@ -1,0 +1,179 @@
+/*  ====================================================================
+**  http://www.diku.dk/diku.css
+**  $Id: diku.css,v 1.13 2006/01/24 07:33:59 shotokan Exp $
+**
+**  Som alle andre på KU skal DIKU følge KUs designprogram. En udførlig
+**  vejledning til dette kan findes på http://www.ku.dk/designmanual/.
+**
+**  Sideopbygning og navne
+**  ~~~~~~~~~~~~~~~~~~~~~~
+**	Jvf. designmanualen opbygges siderne med en bjælke med
+**	instituttets navn øverst på siden. Vi vælger herunder at have
+**	en spalte til venstre med navigation og et bredt område til
+**	højre til indhold. De tre områder identificeres i CSS som hhv.
+**	head, menu og main. Navnet "main" benyttes kun på forsiden -
+**	for alle øvrige indholdssider anvendes passende defaults. 
+**
+**  Skriftsnit
+**  ~~~~~~~~~~
+**	Jvf. designmanualen benyttes skriftsnittet Verdana eller den
+**	bedst mulige erstatning.
+**
+**  Farver
+**  ~~~~~~
+**	Jvf. designmanualen benyttes sort skrift på hvid baggrund.
+**	Der ud over er der en række farver til rådighed dels for KU
+**	og dels for de enkelte fakulteter. For vores vedkommende kan
+**	følgende farver benyttes:
+**
+**	#000000	=   0,   0,   0	= sort
+**	#ffffff = 255, 255, 255	= hvid
+**
+**	#666666	= 102, 102, 102	= KU grå
+**	#c0c2c5	= 192, 194, 197	= KU WebHead
+**	#d5d7d7	= 213, 215, 215	= KU WebMenu
+**	#901a1e	= 144,  26,  30	= KU WebLogo
+**
+**	#325d3d	=  50,  93,  61	= Nat grøn (mørkest)
+**	#5b7d64	=  91, 125, 100	= Nat grøn
+**	#849e8b	= 132, 158, 139	= Nat grøn
+**	#adbeb1	= 171, 190, 177	= Nat grøn
+**	#d6dfd8	= 214, 223, 216	= Nat grøn (lysest)
+**	#c1cec4 = 193, 206, 196	= Nat WebHead
+**	#e0e7e2 = 224, 231, 226	= Nat WebMenu
+**	#325d3d =  50,  93,  61	= Nat WebLogo
+**
+**  ====================================================================
+*/
+
+
+/* --- Standard for indholdssider --- */
+body {
+  margin:		2em;
+  padding-bottom:	2em;
+  color:		#000000;
+  background-color:	#ffffff;
+  font-family:		Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+a:link, a:visited {
+  color:		#325d3d;
+  text-decoration:	underline;
+}
+
+a:hover, a:active {
+  color:		#901a1e;
+  text-decoration:	underline;
+}
+
+address {
+  clear:		both;
+  padding-top:		1em;
+  text-align:		center;
+  font-size:		x-small;
+}
+
+dt {
+  font-weight:		bold;
+  padding-bottom:	0.2em;
+}
+
+dd {
+  padding-bottom:	1em;
+}
+
+dd ul {
+  margin-top:		0;
+}
+
+h1 {
+  font-size:		xx-large;
+  margin-bottom:	1.0em;
+  text-align:		center;
+}
+
+h2 {
+  font-size:		large;
+  margin-bottom:	0.2em;
+}
+
+h2 + p, h2 + ul {
+  margin-top:		0;
+}
+  
+h3 {
+  font-size:		medium;
+  margin-bottom:	0.2em;
+}
+
+h3 + p, h3 + ul {
+  margin-top:		0;
+}
+  
+h4 {
+  font-size:		small;
+  margin-bottom:	0.1em;
+}
+
+h5 {
+  font-size:		x-small;
+  margin-bottom:	0.1em;
+}
+
+h6 {
+  font-size:		xx-small;
+  margin-bottom:	0.0em;
+}
+
+li {
+  list-style-type:	square;
+}
+
+table + h2 {
+  margin-top:		2em;
+}
+
+table + h3 {
+  margin-top:		1em;
+}
+
+
+/* --- Standard for tabeller der fungerer som lister --- */
+table.list {
+  border-top:		1px solid #000000;
+  border-bottom:	1px solid #000000;
+  text-align:		left;
+}
+
+table.list th {
+  background-color:	#ffffff;
+  border-bottom:	1px solid #000000;
+}
+
+table.list th, table.list td {
+  padding-left:		0.2em;
+  padding-right:	0.2em;
+}
+
+table.list tr:hover {
+  background-color:	#c1cec4;
+}
+
+table.list .color0 {
+  background-color:	#ffffff;
+}
+
+table.list .color1 {
+  background-color:	#e0e7e2;
+}
+
+
+/* --- Standard for liste af henvisninger --- */
+.linklist h2 {
+  margin:		1em 0 0.2em 0;
+  border-bottom:	1px dotted #c1cec4;
+}
+
+.linklist li {
+  color:		#849e8b;
+}

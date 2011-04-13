@@ -1,0 +1,160 @@
+/*  ====================================================================
+**  http://www.diku.dk/forside/index.css
+**  $Id: index.css,v 1.14 2005/11/02 05:43:54 shotokan Exp $
+**
+**  Inkluderes efter /diku.css. Indeholder regler specielt til
+**  opsætning af DIKUs forside.
+**  ====================================================================
+*/
+
+
+/* --- Rammen "head" --- */
+#head {
+  padding:              0;
+  border-width:         0 0 1px 0;
+  border-color:			black;
+  border-style:			solid;
+  margin:               0;
+  background-color:     white;
+  background-image:     url('./head_data/head-bg.gif');
+  background-repeat:    repeat-x;
+  white-space:		nowrap;
+  font-size:            x-small;
+}
+
+#head a:link, #head a:visited {
+  color:                #849e8b;
+  text-decoration:      none;
+}
+
+#head a:hover, #head a:active {
+  color:                #901a1e;
+  text-decoration:      underline;
+}
+
+
+/* --- Rammen "menu" --- */
+#menu {
+  padding:              0;
+  border:		0;
+  border-right:		1px solid #325d3d;
+  margin:               2em 1em 0 1em;
+  color:                #849e8b;
+  font-size:            small;
+}
+
+#menu a:link, #menu a:visited {
+  color:                #849e8b;
+  text-decoration:      none;
+}
+
+#menu a:hover, #menu a:active {
+  color:                #901a1e;
+  text-decoration:      underline;
+}
+
+#menu ul {
+  padding-left:		0;
+  margin-left:		1em;
+}
+
+
+/* --- Rammen "main" --- */
+#main {
+  background-color:	#ffffff;
+  background-image:	url(./main_data/main-bg.gif);
+  background-repeat:	no-repeat;
+  font-size:		medium;
+}
+
+
+/* Række med billeder øverst */
+#main .billeder {
+  clear:		both;
+  width:		660px;
+  padding:		0;
+  border:		0;
+  margin:		0;
+  white-space:		nowrap;
+}
+
+#main .billeder img {
+  clear:		right;
+  float:		left;
+  padding:		0 5px 2em 0;
+}
+
+
+/* Spalte med aktiviteter til venstre */
+#main .aktiviteter {
+  clear:		left;
+  float:		left;
+  width:		330px;
+  padding:		0;
+  border:		0;
+  margin:		0;
+}
+
+#main .aktivitet {
+  display:		table;		/* Mozilla */
+  height:		100%;		/* Explorer */
+  width:		95%;
+  margin-bottom:	1em;
+}
+
+#main .aktivitet h3 {
+  margin:		0;
+}
+
+#main .aktivitet h4 {
+  margin:		0;
+}
+
+#main .aktivitet p {
+  margin:		0;
+  padding-top:		0.2em;
+}
+
+
+/* Spalte med reklamer til højre */
+#main .reklamer {
+  clear:		right;
+  float:		left;
+  width:		325px;
+  padding:		0;
+  border:		0;
+  margin:		0;
+  font-size:            small;
+}
+
+#main .reklame {
+  clear:		right;
+  float:		right;
+  display:		table;		/* Mozilla */
+  height:		100%;		/* Explorer */
+  border:		1px solid #325d3d;
+  margin-bottom:	1em;
+  padding:		10px;
+  background-color:	#c1cec4;
+}
+
+#main .reklame {
+  width:		325px;		/* Explorer */
+  voice-family:		"\"}\"";
+  voice-family:		inherit;
+  width:		303px;		/* Mozilla */
+}
+
+html > #main .reklame {
+  width:		303px;		/* Mozilla, Opera */
+}
+
+#main .reklame h3 {
+  margin:		0;
+  font-size:		small;
+}
+
+#main .reklame p {
+  margin:		0;
+  padding-top:		0.2em;
+}
